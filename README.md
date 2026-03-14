@@ -34,6 +34,10 @@ Since PicSeek takes screenshots of specific areas of the screen and uses GTK3, i
 
 - On GNOME, PicSeek automatically creates its hotkey shortcuts upon installation.
 
-- On Cinnamon, you need to manually add the shortcut via the Keyboard settings from the menu.
-
+- On Cinnamon, PicSeek automatically creates its hotkey shortcuts upon installation.
+- 
+- The Hotkey is `Ctrl` `Shift` `G`
+  
 After installation, you can run PicSeek from the terminal using its command: `picseek`
+
+If you see unusual logs, So please send us those logs and your system info in a text file. 
