@@ -1,43 +1,65 @@
 # PicSeek
 
-PicSeek is an image search tool similar to Samsung’s Circle To Search.
+PicSeek is a reverse image search tool for Linux, similar to Samsung's Circle to Search. Draw around anything on your screen and search it instantly with Google Lens.
 
-# Support
+![PicSeek Screenshot](https://github.com/hassanmaqbool12/PicSeek/blob/main/Screenshot%20from%202026-03-14%2004-03-58.png)
 
-PicSeek is written in Python and officially supports almost all Ubuntu/Debian-based distributions.
+# Installation
 
-# Note
+Download the latest `.deb` file from [Releases](https://github.com/hassanmaqbool12/PicSeek/releases) and install it:
+```bash
+sudo dpkg -i picseek.deb
+```
 
-This is a beta release intended for testing purposes. It may not work properly on all desktop environments, window managers, or display servers. This version was tested on Linux Mint 21.1 Vera with Cinnamon 5.6.8. It will not work on Wayland. 
+All dependencies are installed automatically.
 
-![PicSeek Screenshot](https://github.com/hassanmaqbool12/PicSeek/blob/72e3482d6b898d89bee7f8e176b8b5721ae1fb55/Screenshot%20from%202026-03-14%2004-03-58.png)
+# Dependencies
 
-# How it Wroks?
+PicSeek requires the following packages, all of which are installed automatically with the `.deb`:
 
-PicSeek works by first creating an overlay on your screen. You use your cursor to draw a square around the object you want to search. This selection determines the area that will be captured as a screenshot.
+`python3` `python3-requests` `python3-gi` `python3-cairo` `scrot` `libgtk-3-0`
 
-Once you release the cursor, the overlay disappears and a confirmation window appears. You can press ESC to cancel or Enter to continue.
+# How it Works
 
-If you continue, 
+1. Press `Ctrl + Shift + G` to launch PicSeek
+2. Your screen dims and a crosshair cursor appears
+3. Click and drag to draw a selection around the area you want to search
+4. Release the mouse — a confirmation window appears with a preview
+5. Press **Enter** to search or **Esc** to cancel
+6. Google Lens opens with your results
 
-- PicSeek uploads the selected image to the cloud and performs a Google Lens search.
+If Chrome or Chromium is installed, results open in an isolated app window. Otherwise they open in your default browser.
 
-- If you have Chrome or Chromium, it opens the Google Lens result in an isolated profile window.
+# Privacy
 
-- If you don’t have Chrome or Chromium, it opens the Google Lens result page in your default browser.
+The selected area is temporarily uploaded to an image host for processing and is automatically deleted after 10 seconds. Nothing is stored permanently.
 
-# Limitation of this version
+# Shortcuts
 
-Since PicSeek takes screenshots of specific areas of the screen and uses GTK3, it may behave differently on different desktop environments, window managers, and display servers. It will not work on Wayland, never and ever.
+| Action | Shortcut |
+|---|---|
+| Launch PicSeek | `Ctrl + Shift + G` |
+| Confirm search | `Enter` |
+| Cancel | `Esc` |
 
-# Shortcuts and Usage
+Shortcuts are registered automatically on installation for GNOME and Cinnamon.
 
-- On GNOME, PicSeek automatically creates its hotkey shortcuts upon installation.
+You can also launch PicSeek manually from the terminal:
+```bash
+picseek
+```
 
-- On Cinnamon, PicSeek automatically creates its hotkey shortcuts upon installation.
-- 
-- The Hotkey is `Ctrl` `Shift` `G`
-  
-After installation, you can run PicSeek from the terminal using its command: `picseek`
+# Compatibility
 
-If you see unusual logs, So please send us those logs and your system info in a text file. 
+| | Status |
+|---|---|
+| X11 | ✅ Supported |
+| Wayland | ❌ Not supported | Coming up version will support |
+
+Tested on Linux Mint 21.1 Vera with Cinnamon 5.6.8. Should work on most Ubuntu and Debian based distributions running X11.
+
+This is a beta release. Behavior may vary across desktop environments and window managers.
+
+# Issues & Feedback
+
+Found a bug or something looks wrong? Open an issue on [GitHub Issues](https://github.com/hassanmaqbool12/PicSeek/issues) and include any terminal output along with your distro and desktop environment.
