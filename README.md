@@ -42,7 +42,7 @@ The selected area is temporarily uploaded to an image host for processing and is
 | Confirm search | `Enter` |
 | Cancel | `Esc` |
 
-Shortcuts are registered automatically on installation for GNOME and Cinnamon.
+Shortcuts are registered automatically on installation for Cinnamon.
 
 You can also launch PicSeek manually from the terminal:
 ```bash
