@@ -314,6 +314,7 @@ class DrawCapture(Gtk.Application):
         global FILE
         FILE = os.path.join(tempfile.gettempdir(), "picseek_capture.png")
 
+        #XXX This if statement is very useful. It prevents duplication of Sample pictures.
         if FILE and os.path.exists(FILE):
             os.remove(FILE)
 
@@ -343,6 +344,9 @@ class DrawCapture(Gtk.Application):
         if FILE and os.path.exists(FILE):
             os.remove(FILE)
         self.quit()
+
+
+# This class is experimental. This would be later used to allo PicSeek to also act as a ScreenShot tool
 
 class ScreenShot(Gtk.Application):
     def __init__(self):
