@@ -2,8 +2,6 @@
 
 PicSeek is a reverse image search tool for Linux, similar to Samsung's Circle to Search. Draw around anything on your screen and search it instantly with Google Lens.
 
-![PicSeek Preview](https://github.com/hassanmaqbool12/PicSeek/blob/3870140ef9ffd7d3bab108b5c81d431faa0b02ec/untitled.GIF)
-
 # Installation
 
 Download the latest `.deb` file from [Releases](https://github.com/hassanmaqbool12/PicSeek/releases) and install it:
