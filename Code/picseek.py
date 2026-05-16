@@ -36,7 +36,7 @@ class AfterShotAPP(Gtk.Application):
         self.window.set_resizable(False)
         self.window.set_size_request(-1, 400)
         global SCREENSHOT
-        self.Type = 'Save' if SCREENSHOT else 'Search'
+        self.type = 'Save' if SCREENSHOT else 'Search'
 
         styler = Gtk.CssProvider()
         styler.load_from_path(PATH+"/style.css")
@@ -60,7 +60,7 @@ class AfterShotAPP(Gtk.Application):
 
         self.loading_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=0)
         self.spinner = Gtk.Spinner()
-        self.search_label = Gtk.Label(label=self.Type)
+        self.search_label = Gtk.Label(label=self.type)
 
         self.semi_bt_box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=10)
         self.cancel_bt = Gtk.Button(label='Cancel')
