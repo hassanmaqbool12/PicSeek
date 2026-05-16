@@ -346,7 +346,7 @@ class DrawCapture(Gtk.Application):
         self.quit()
 
 
-# This class is experimental. This would be later used to allo PicSeek to also act as a ScreenShot tool
+# This class is experimental. This would be later used to allow PicSeek to also act as a ScreenShot tool
 
 class ScreenShot(Gtk.Application):
     def __init__(self):
