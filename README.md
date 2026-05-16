@@ -6,7 +6,7 @@ PicSeek is a reverse image search tool for Linux, similar to Samsung's Circle to
 
 Download the latest `.deb` file from [Releases](https://github.com/hassanmaqbool12/PicSeek/releases) and install it:
 ```bash
-sudo dpkg -i picseek.deb
+sudo dpkg -i picseek-v2.deb
 ```
 
 All dependencies are installed automatically.
