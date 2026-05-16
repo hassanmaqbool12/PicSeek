@@ -21,7 +21,7 @@ PicSeek requires the following packages, all of which are installed automaticall
 
 # How it Works
 
-1. Press `Ctrl + Shift + G` to launch PicSeek
+1. Launch PicSeek
 2. Your screen dims and a crosshair cursor appears
 3. Click and drag to draw a selection around the area you want to search
 4. Release the mouse — a confirmation window appears with a preview
@@ -38,11 +38,8 @@ The selected area is temporarily uploaded to an image host for processing and is
 
 | Action | Shortcut |
 |---|---|
-| Launch PicSeek | `Ctrl + Shift + G` |
 | Confirm search | `Enter` |
 | Cancel | `Esc` |
-
-Shortcuts are registered automatically on installation for Cinnamon.
 
 You can also launch PicSeek manually from the terminal:
 ```bash
@@ -53,8 +50,8 @@ picseek
 
 | | Status |
 |---|---|
-| X11 | ✅ Supported |
-| Wayland | ❌ Not supported | Coming up version will support |
+| X11 | Supported |
+| Wayland | Not supported | Coming up version will support |
 
 Tested on Linux Mint 21.1 Vera with Cinnamon 5.6.8. Should work on most Ubuntu and Debian based distributions running X11.
 
