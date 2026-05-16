@@ -1,0 +1,50 @@
+
+#body {
+    padding:10px;
+}
+
+#image {
+    border-radius: 20px;
+}
+
+#search {
+    padding: 8px;
+    border-radius: 2px;
+    border: none;
+    min-width: 40px;
+    background-color:@theme_selected_bg_color;
+}
+
+#cancel {
+    padding: 8px;
+    border-radius: 2px;
+    border: none;
+}
+
+#search:active {
+    background: transparent;
+}
+
+#overlay {
+    background-color: @theme_selected_bg_color;
+}
+
+#head-label {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#option-bt {
+    min-width: 60px;
+    padding: 12px 20px;
+    background-color: transparent;
+    border-radius:0px;
+}
+
+#selected {
+    min-width: 60px;
+    padding: 12px 20px;
+    border-radius:4px;
+    background-color: @theme_selected_bg_color;
+}
