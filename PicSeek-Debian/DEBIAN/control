@@ -1,8 +1,0 @@
-Package: PicSeek
-Version: 2.0
-Section: utils
-Priority: optional
-Architecture: all
-Depends: python3-requests, python3-gi, python3-cairo, scrot, libgtk-3-0, python3
-Maintainer: Hassan Maqbool <hassammaqbool12@gmail.com>
-Description: PicSeek – image search tool. PicSeek is a tool for searching images online, similar to Samsung's Circle To Search. Developed in Python.
