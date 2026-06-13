@@ -323,7 +323,7 @@ class DrawCapture(Gtk.Application):
 
         width = x2 - x1
         height = y2 - y1
-        region = f"{x1},{y1},{width},{height}"
+        region = f"{width}x{height}+{x1}+{y1}"
 
         # close overlay first
         self.window.hide()
@@ -333,8 +333,8 @@ class DrawCapture(Gtk.Application):
             Gtk.main_iteration()
 
         time.sleep(0.15)
-
-        subprocess.run(["scrot", "-a", region, FILE])
+        print(region)
+        subprocess.run(["flameshot", "gui", "--region", region,"--accept-on-select" , "--path", FILE])
 
         show_success_log("Captured image: "+FILE)
 
