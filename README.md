@@ -49,7 +49,7 @@ picseek
 | | Status |
 |---|---|
 | X11 | Supported |
-| Wayland | Not supported | Coming up version will support |
+| Wayland | Testing ongoing |
 
 Tested on Linux Mint 21.1 Vera with Cinnamon 5.6.8. Should work on most Ubuntu and Debian based distributions running X11.
 
